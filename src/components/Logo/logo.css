@@ -8,11 +8,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', end
 
 }
 .main_logo {
-	margin-top: -40px;
+	margin-top: -80px;
 	margin-left: 20px;
 }
 
 .logo {
 	 height: 150px;
 	 width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+	.main_logo {
+		margin-top: -100px;
+		margin-left: 10px;
+	}
+	.logo {
+		height: 70px;
+		width: 70px;
+	}
 }

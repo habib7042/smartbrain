@@ -7,3 +7,15 @@ background-position:  20px 0, 20px 0, 0 0, 0 0;
 background-size: 20px 20px;
 background-repeat: repeat;
 }
+
+@media only screen and (max-width: 768px) {
+	.res {
+		width: 80%;
+		padding: 2px;
+		font-size: 18px;
+	}
+	.main_text {
+		font-size: 18px;
+		width: 600;
+	}
+}

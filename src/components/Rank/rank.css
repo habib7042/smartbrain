@@ -7,3 +7,16 @@
 	color: red;
 	margin-top: -20px;
 }
+
+@media only screen and (max-width: 768px) {
+	.text {
+		font-size: 18px;
+	}
+
+	.number {
+	font-size: 20px;
+	width: 500;
+	color: red;
+	margin-top: -20px;
+	}
+}
