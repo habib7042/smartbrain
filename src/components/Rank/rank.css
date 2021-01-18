@@ -1,0 +1,9 @@
+.text {
+	font-size: 25px;
+	margin-top: -200px;
+}
+.number {
+	font-size: 30px;
+	width: 600;
+	color: red;
+}
