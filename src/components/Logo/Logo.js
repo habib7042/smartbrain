@@ -6,8 +6,8 @@ import './logo.css'
 
 const Logo = () => {
     return(
-        <div className ='ma4 mt0'>
-            <Tilt className="Tilt br2 shadow-2" options={{ max : 55 }} style={{ height: 150, width: 150 }} >
+        <div className ='main_logo'>
+            <Tilt className="Tilt br2 shadow-2 logo" options={{ max : 55 }} >
                 <div className="Tilt-inner"> <img style={{paddingTop: '6px'}} src={brain} alt=''/> </div>
             </Tilt>
         </div>

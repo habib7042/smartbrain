@@ -7,3 +7,12 @@ background: linear-gradient(to bottom,  #c5deea 0%,#8abbd7 31%,#066dab 100%); /*
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 ); /* IE6-9 */
 
 }
+.main_logo {
+	margin-top: -40px;
+	margin-left: 20px;
+}
+
+.logo {
+	 height: 150px;
+	 width: 150px;
+}
