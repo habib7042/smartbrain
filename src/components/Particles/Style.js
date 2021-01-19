@@ -65,10 +65,7 @@ const partStyle = {
               value: 0.8,
             },
             shape: {
-                    type: "circle",
-                    stroke: {
-                    width: 0,
-                    color: "#000000"
+                 type: "circle",
               },
             size: {
               random: true,
