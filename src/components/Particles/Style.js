@@ -34,7 +34,17 @@ const partStyle = {
           },
           particles: {
             color: {
-              value: "#8B0000",
+              value: [
+              "#3998D0",
+              "#2EB6AF",
+              "#A9BD33",
+              "#FEC73B",
+        "#F89930",
+        "#F45623",
+        "#D62E32",
+        "#EB586E",
+        "#9952CF"
+              ],
             },
             links: {
               color: "#0000FF",
