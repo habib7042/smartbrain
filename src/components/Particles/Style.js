@@ -21,7 +21,7 @@ const partStyle = {
                 distance: 400,
                 duration: 2,
                 opacity: 1,
-                size: 60,
+                size: 100,
               },
               push: {
                 quantity: 4,
