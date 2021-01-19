@@ -18,29 +18,66 @@ const partStyle = {
             },
             modes: {
               bubble: {
-                distance: 400,
-                duration: 2,
+                distance: 600,
+                duration: 5,
                 opacity: 1,
-                size: 40,
+                size: 200,
               },
               push: {
                 quantity: 4,
               },
               repulse: {
                 distance: 200,
-                duration: 0.4,
+                duration: 0.7,
               },
             },
           },
           particles: {
             color: {
-              value: "#8B0000",
+              value: [
+              "#ff0000",
+              "#06ad22"
+              ],
             },
+            destroy: {
+      mode: "split",
+      split: {
+        count: 3,
+        factor: {
+          value: 9,
+          random: {
+            enable: true,
+            minimumValue: 2
+          }
+        },
+        rate: {
+          value: 10,
+          random: {
+            enable: true,
+            minimumValue: 5
+          }
+        },
+        particles: {
+          collisions: {
+            enable: true
+          },
+          destroy: {
+            mode: "none"
+          },
+          life: {
+            count: 1,
+            duration: {
+              value: 1
+            }
+          }
+        }
+      }
+    },
             links: {
               color: "#0000FF",
               distance: 150,
               enable: true,
-              opacity: 0.5,
+              opacity: 0,
               width: 2,
             },
             collisions: {
@@ -50,7 +87,7 @@ const partStyle = {
               direction: "none",
               enable: true,
               outMode: "bounce",
-              random: false,
+              random: true,
               speed: 6,
               straight: false,
             },
@@ -65,8 +102,8 @@ const partStyle = {
               value: 0.8,
             },
             shape: {
-              type: "triangle",
-            },
+                 type: "circle",
+              },
             size: {
               random: true,
               value: 8,

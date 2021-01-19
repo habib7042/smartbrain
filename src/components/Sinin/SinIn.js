@@ -8,19 +8,19 @@ const SinIn = ({ onRouteChange }) => {
     			<fieldset id="sign_up" className="ba b--transparent ph0 mh0">
       			<legend className="f1 fw6 ph0 mh0 center">Sign In</legend>
      		 	<div className="mt3">
-        		<label className="db fw6 lh-copy f6" for="email-address">Email</label>
+        		<label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
         		<input className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="email" name="email-address"  id="email-address"/>
      			 </div>
       			<div className="mv3">
-        		<label className="db fw6 lh-copy f6" for="password">Password</label>
+        		<label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
         		<input className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password"  id="password"/>
       			</div>
     			</fieldset>
     			<div className="">
-      			<input className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" onClick={onRouteChange} type="submit" value="Sign in"/>
+      			<input className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" onClick={() => onRouteChange('home')} type="submit" value="Sign in"/>
     			</div>
     			<div className="lh-copy mt3">
-      			<a href="#0" class="f6 link dim black db">Register</a>
+      			<p onClick = {()=> onRouteChange('signup')} className="b ph3 pv input-reset ba b--black bg-transparent grow pointer f6 dib">Register</p>
     			</div>
   				</form>
 			</main>

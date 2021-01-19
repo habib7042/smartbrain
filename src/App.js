@@ -9,6 +9,7 @@ import Rank from './components/Rank/Rank';
 import FaceRecognation from './components/Face/FaceRecognation';
 import Style from './components/Particles/Style';
 import SinIn from './components/Sinin/SinIn';
+import SignUp from './components/SignUp/SignUp';
 import 'tachyons';
 
 
@@ -23,7 +24,8 @@ class App extends Component {
         input : '',
         imageUrl : '',
         box : {},
-        route : 'sinin'
+        route : 'sinin',
+        isSignedIn : false,
       }
     }
 
@@ -56,23 +58,34 @@ class App extends Component {
       .then(response => this.displayBox(this.calculateFaceLocation(response)))
       .catch(err => console.log(err))
 }
-onRouteChange = () => {
-  this.setState({route: 'home'})
+onRouteChange = (route) => {
+  if(route ==='signout'){
+    this.setState({isSignedIn: false})
+  }else if (route ==='home'){
+    this.setState({isSignedIn: true})
+  }
+  this.setState({route: route})
 }
 
   render(){
+   const {isSignedIn, box, imageUrl, route} =this.state;
   return (
     <div className="App">
       <Style/>
-      <Navigation/>
-      {this.state.route === 'sinin'
-      ? <SinIn onRouteChange = {this.onRouteChange}/>
-      : <div>
-      <Logo/>
-      <Rank/>
-      <ImageLink onInputChange ={this.onInputChange} onButtonSubmit={this.onButtonSubmit}/>
-      <FaceRecognation box ={this.state.box} imageUrl = {this.state.imageUrl}/>
-      </div>}
+      <Navigation isSignedIn={isSignedIn} onRoutChange={this.onRouteChange}/>
+      {route === 'home'
+      ? <div>
+          <Logo/>
+          <Rank/>
+          <ImageLink onInputChange ={this.onInputChange} onButtonSubmit={this.onButtonSubmit}/>
+          <FaceRecognation box ={box} imageUrl = {imageUrl}/>
+        </div>
+        : (
+        this.state.route ==='sinin'
+        ? <SinIn onRouteChange = {this.onRouteChange}/>
+        : <SignUp onRouteChange = {this.onRouteChange}/>
+        )
+      }
     </div>
   );
   }
