@@ -21,11 +21,7 @@ const partStyle = {
                 distance: 600,
                 duration: 5,
                 opacity: 1,
-<<<<<<< HEAD
-                size: 200,
-=======
                 size: 100,
->>>>>>> 53024336b1568abd496fff4429e078fba4212696
               },
               push: {
                 quantity: 4,
@@ -46,20 +42,12 @@ const partStyle = {
             destroy: {
       mode: "split",
       split: {
-<<<<<<< HEAD
         count: 3,
-=======
-        count: 1,
->>>>>>> 53024336b1568abd496fff4429e078fba4212696
         factor: {
           value: 9,
           random: {
             enable: true,
-<<<<<<< HEAD
             minimumValue: 2
-=======
-            minimumValue: 4
->>>>>>> 53024336b1568abd496fff4429e078fba4212696
           }
         },
         rate: {
@@ -71,11 +59,7 @@ const partStyle = {
         },
         particles: {
           collisions: {
-<<<<<<< HEAD
             enable: true
-=======
-            enable: false
->>>>>>> 53024336b1568abd496fff4429e078fba4212696
           },
           destroy: {
             mode: "none"
