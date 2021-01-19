@@ -65,8 +65,11 @@ const partStyle = {
               value: 0.8,
             },
             shape: {
-              type: "triangle",
-            },
+                    type: "circle",
+                    stroke: {
+                    width: 0,
+                    color: "#000000"
+              },
             size: {
               random: true,
               value: 8,
