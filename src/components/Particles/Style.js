@@ -46,6 +46,40 @@ const partStyle = {
         "#9952CF"
               ],
             },
+            destroy: {
+      mode: "split",
+      split: {
+        count: 1,
+        factor: {
+          value: 9,
+          random: {
+            enable: true,
+            minimumValue: 4
+          }
+        },
+        rate: {
+          value: 10,
+          random: {
+            enable: true,
+            minimumValue: 5
+          }
+        },
+        particles: {
+          collisions: {
+            enable: false
+          },
+          destroy: {
+            mode: "none"
+          },
+          life: {
+            count: 1,
+            duration: {
+              value: 1
+            }
+          }
+        }
+      }
+    },
             links: {
               color: "#0000FF",
               distance: 150,
