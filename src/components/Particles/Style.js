@@ -21,7 +21,7 @@ const partStyle = {
                 distance: 400,
                 duration: 2,
                 opacity: 1,
-                size: 40,
+                size: 60,
               },
               push: {
                 quantity: 4,
@@ -40,7 +40,7 @@ const partStyle = {
               color: "#0000FF",
               distance: 150,
               enable: true,
-              opacity: 0.5,
+              opacity: 0,
               width: 2,
             },
             collisions: {
