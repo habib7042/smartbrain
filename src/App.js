@@ -8,6 +8,7 @@ import Clarifai from "clarifai";
 import Rank from './components/Rank/Rank';
 import FaceRecognation from './components/Face/FaceRecognation';
 import Style from './components/Particles/Style';
+import SinIn from './components/Sinin/SinIn';
 import 'tachyons';
 
 
@@ -22,6 +23,7 @@ class App extends Component {
         input : '',
         imageUrl : '',
         box : {},
+        route : 'sinin'
       }
     }
 
@@ -54,16 +56,23 @@ class App extends Component {
       .then(response => this.displayBox(this.calculateFaceLocation(response)))
       .catch(err => console.log(err))
 }
+onRouteChange = () => {
+  this.setState({route: 'home'})
+}
 
   render(){
   return (
     <div className="App">
       <Style/>
       <Navigation/>
+      {this.state.route === 'sinin'
+      ? <SinIn onRouteChange = {this.onRouteChange}/>
+      : <div>
       <Logo/>
       <Rank/>
       <ImageLink onInputChange ={this.onInputChange} onButtonSubmit={this.onButtonSubmit}/>
       <FaceRecognation box ={this.state.box} imageUrl = {this.state.imageUrl}/>
+      </div>}
     </div>
   );
   }
