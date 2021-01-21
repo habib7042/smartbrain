@@ -74,10 +74,15 @@ const partStyle = {
       }
     },
             links: {
-              color: "#0000FF",
+              color: {
+                   value: [
+                    "#ff0000",
+                    "#06ad22"
+                  ],
+               },
               distance: 150,
               enable: true,
-              opacity: 0,
+              opacity: 0.8,
               width: 2,
             },
             collisions: {
