@@ -79,8 +79,8 @@ const partStyle = {
               color: "#000080",
               distance: 200,
               enable: true,
-              opacity: 0.8,
-              width: 2,
+              opacity: 0.5,
+              width: 1,
             },
             collisions: {
               enable: true,
