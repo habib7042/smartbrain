@@ -76,11 +76,8 @@ const partStyle = {
       }
     },
             links: {
-              color: [
-                    "#ff0000",
-                    "#06ad22"
-                  ],
-              distance: 150,
+              color: "#06ad22",
+              distance: 200,
               enable: true,
               opacity: 0.8,
               width: 2,
@@ -111,7 +108,7 @@ const partStyle = {
               },
             size: {
               random: true,
-              value: 8,
+              value: 10,
             },
           },
           detectRetina: true,
