@@ -76,7 +76,7 @@ const partStyle = {
       }
     },
             links: {
-              color: "#06ad22",
+              color: "#000080",
               distance: 200,
               enable: true,
               opacity: 0.8,
