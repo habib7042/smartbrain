@@ -36,7 +36,9 @@ const partStyle = {
             color: {
               value: [
               "#ff0000",
-              "#06ad22"
+              "#06ad22",
+              "#800080",
+              "#000000"
               ],
             },
             destroy: {
@@ -74,12 +76,10 @@ const partStyle = {
       }
     },
             links: {
-              color: {
-                   value: [
+              color: [
                     "#ff0000",
                     "#06ad22"
                   ],
-               },
               distance: 150,
               enable: true,
               opacity: 0.8,
