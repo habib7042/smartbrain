@@ -36,7 +36,9 @@ const partStyle = {
             color: {
               value: [
               "#ff0000",
-              "#06ad22"
+              "#06ad22",
+              "#800080",
+              "#000000"
               ],
             },
             destroy: {
@@ -74,11 +76,11 @@ const partStyle = {
       }
     },
             links: {
-              color: "#0000FF",
-              distance: 150,
+              color: "#000080",
+              distance: 200,
               enable: true,
-              opacity: 0,
-              width: 2,
+              opacity: 0.5,
+              width: 1,
             },
             collisions: {
               enable: true,
@@ -106,7 +108,7 @@ const partStyle = {
               },
             size: {
               random: true,
-              value: 8,
+              value: 10,
             },
           },
           detectRetina: true,
